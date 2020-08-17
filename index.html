@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 課題１ 天気API</title>
+</head>
+<body>
+    <h1>世界の天気</h1>
+    <label for="city-select">場所:</label>
+    <select name="cities" id="city-select">
+        <option value="London" selected>ロンドン</option>
+        <option value="Tokyo">東京</option>
+        <option value="Paris">パリ</option>
+        <option value="New York City">ニューヨーク</option>
+        <option value="Indonesia">インドネシア</option>
+    </select>
+
+    <h2><span id="city"></span>の天気</h2>
+    <ul class="date">
+        <li id="date-1"></li>
+        <li id="date-2"></li>
+        <li id="desc"></li>
+        <li>気温：<span id="temp"></span>&#8451;</li>
+        <li>風速：<span id="windspeed"></span>m&#047;秒</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
